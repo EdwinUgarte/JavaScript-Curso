@@ -3,13 +3,18 @@
 let juegos = ["Zelda", "Mario", "Metroid", "Halo"];
 console.log("Largo: ", juegos.length);
 
+//? Otorga el juego en la primer posicion
 let primero = juegos[0];
+
+//? Otorga el juego de la ultima posicion
 let ultimo = juegos[juegos.length - 1];
 
+//*Imprime
 console.log({ primero, ultimo });
 
-juegos.forEach((elemento, indice, arr) => {
-  console.log({ elemento, indice, arr });
+//?Recorre el arreglo y devuelve el indice y el valor
+juegos.forEach((nombreJuego, indice) => {
+  console.log("Juego: "+ indice + '\nNombre: ' + nombreJuego + '\n');
 });
 
 //? Agrega un nuevo juego al final del arreglo
@@ -36,3 +41,5 @@ console.log({ juegosBorrados, juegos});
 //? Encuentra el index de algun juego
 let metroidIndex = juegos.indexOf('Metroid');
 console.log(metroidIndex);
+
+
