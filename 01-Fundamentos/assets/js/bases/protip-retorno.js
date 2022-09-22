@@ -1,3 +1,5 @@
+
+
 function crearPersona(nombre, apellido) {
   return {
     nombre: nombre,
@@ -9,19 +11,23 @@ function crearPersona(nombre, apellido) {
 const { apellido: nuevoApellido } = crearPersona("Edwin", "Ortiz");
 console.log(nuevoApellido);
 
-
-const crearPersona2 = (nombre, apellido) => ({ nombre, apellido });
-
 const persona = crearPersona("Edwin", "Ugarte");
 console.log(persona);
 
-const persona2 = crearPersona2("Edwin", "Ugarte");
-console.log(persona);
 
+//? Creacion de funcion flecha 
+const crearPersona2 = (nombre, apellido) => ({ nombre, apellido });
+
+const persona2 = crearPersona2("Edwin", "Ugarte");
+console.log(persona2);
+
+
+
+//? funcion simple con lectura de argumentos sin declaración
 function imprimeArgumentos() {
     console.log(arguments);
 }
-
+//* Aqui se envian argumentos no declarados arriba pero la propiedad 'arguments' nos ayuda a imprimirlos como tal
 imprimeArgumentos(10, true, true, 50);
 
 
