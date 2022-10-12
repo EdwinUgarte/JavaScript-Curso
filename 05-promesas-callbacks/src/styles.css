@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    width: 200px;
+}
+
+ul {
+    width: 100%;
+    background-color: rgb(42, 165, 108);
+    padding: 10px;
+    font-weight: bold;
+}
+
+ul li {
+    color: aliceblue;
+}
